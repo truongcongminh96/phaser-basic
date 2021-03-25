@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+import PlayScene from "./scenes/PlayScene";
 
 const config = {
     // WebGL (Web graphics library)
@@ -12,11 +13,7 @@ const config = {
             debug: true,
         }
     },
-    scene: {
-        preload,
-        create,
-        update,
-    }
+    scene: [PlayScene]
 };
 
 new Phaser.Game(config);
